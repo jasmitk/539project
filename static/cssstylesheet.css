@@ -1,0 +1,252 @@
+
+/*Body style specs*/
+body{
+	margin: 10px;
+	padding:10px;
+	font-size: 120%;
+}
+
+/*header 1 style*/
+header h1{
+	font-size: 5rem;
+	padding:2%;
+	color:rgba(0,0,0,.7);
+	text-align: left;
+  display:none;
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 100%;
+}
+
+/*Margin for the page. Reference - CSS Tricks website*/
+#top, #bottom, #left, #right {
+background: black;
+position: fixed;
+}
+#left, #right {
+  top: 0; bottom: 0;
+  width: 1%;
+  }
+  #left { left: 0; }
+  #right { right: 0; }
+  
+#top, #bottom {
+  left: 0; right: 0;
+  height: 1%;
+  }
+  #top { top: 0; }
+  #bottom { bottom: 0; }
+
+/*guest.html page - Guest message is italicized*/
+#gmsg {
+  font-style: italic;
+}
+
+
+/*Photoalbum.html */
+div.imgalbum {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+/*border becomes solid when i hover*/
+div.imgalbum:hover {
+    border: 1px solid #777;
+}
+div.imgalbum img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+#homimage {
+	display: none;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.page-wrap {
+  min-height: 95%;
+  /* equal to footer height */
+    margin-bottom: -60px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+    height: 55px; 
+}
+.site-footer {
+  background: orange;
+  border: dashed 1px black;
+	clear: both;
+	text-align:center;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+ul li.active {
+    background-color: #4CAF50;
+}
+
+li {
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+/*Color change of the tab*/
+nav a.current {
+  background:teal;
+  color:white;
+}
+
+
+.myClass{
+	margin: 0em 1em;
+	padding:.75em;
+	border: 1px solid black;
+	border-radius: .25%;
+
+	/* Safari and Chrome */	
+	-webkit-column-count:3;
+	-moz-column-count: 3;
+	column-count:3;
+	
+}
+
+
+ol{
+	list-style:upper-roman; 
+	margin:1em;
+	border: 1px solid black;
+}
+
+
+/*footer{
+	border: dashed 1px black;
+	clear: both;
+	text-align:center;
+	padding-top: 10px;
+	margin-top: 10px;
+	/*text-transform: uppercase;*/
+/*}*/
+
+
+/*This is media for large screen*/
+@media (min-width: 1025px){
+
+  /*This background color means large screen */
+  body {
+    background-color: yellow;
+  }
+
+  /*Image becomes visible in this screen size*/
+	#homimage{
+		display:inline;
+		width: 100%;
+		height: 100%;
+	}
+
+header h1{
+  font-size: 5rem;
+  padding:2%;
+  color:rgba(0,0,0,.7);
+  text-align: left;
+  display:inline-block;
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+
+   /*This background color means medium size screen */
+  body {
+    background-color: orange;
+  }
+
+    /*Image becomes visible in this screen size*/
+  #homimage{
+    display:inline;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*Image is relative */
+  .textoverimage{
+/*  margin: 0% 0% 5% 0%;*/
+  position: relative;
+  width: 100%;
+
+  }
+
+  /*Text goes over the image*/
+  .textoverimage p { 
+     position: absolute; 
+     top: 0px;
+     bottom: -10px; 
+     left: 0; 
+     width: 100%; 
+     background: rgb(0, 0, 0); /* fallback color */
+     background: rgba(0, 0, 0, 0.7);
+     padding: 10px; 
+     color: white;
+     font-size: 120%;
+  }
+
+  header h1{
+  font-size: 5rem;
+  padding:2%;
+  color:rgba(0,0,0,.7);
+  text-align: left;
+  display:block;
+  position: relative;
+}
+
+
+}

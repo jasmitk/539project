@@ -1,0 +1,29 @@
+{%extends "templates/basic.html" %}
+
+{% block content %}
+	<p>
+		News, ideas, and blog articles for attracting talent will come here. 
+
+		Big businesses woo job candidates by offering a bevy of benefits, brand-name recognition and maybe even a Starbucks in the lobby. How can small businesses compete for top talent? The first step is realizing the advantages small businesses have over big businesses. For starters:
+		– Small businesses are typically less bureaucratic and have closer relationships between leadership and employees.
+		– In many cases, employees typically have more breadth in their jobs than they usually do in big companies, where people tend to specialize more.
+		– Many entrepreneurs treat their work force as if it’s an extension of their family.
+		– Small companies often offer more flexibility, more job diversity and the possibility of high growth.
+		– They frequently tailor a job to deal with employees’ individual needs. For example, a small business might be more willing than a big company to allow an employee who wants to work from home on Fridays to telecommute that one day a week.
+		</p>
+
+
+        <form action="/attract.html" method="post">
+      <div><textarea name="content" rows="5" cols="40"></textarea></div>
+      <div><input type="submit" value="Sign Guestbook"></div>
+    </form>
+
+<body>
+
+
+
+
+
+
+
+	{% endblock %}
