@@ -85,10 +85,7 @@ class ProjectsHandler(webapp2.RequestHandler):
         sender_address = "jasmitk@gmail.com"
         subject = "TEST"
         body = self.request.get('message')
-    
-
         mail.send_mail(sender_address, user_address, subject, body)
-
         template = JINJA_ENVIRONMENT.get_template('templates/emailconfirm.html')
         self.response.write(template.render({'title': 'Projects','header': 'Projects', 'caption1': 'Home', 'caption2': 'Guestbook', 'caption3': 'Projects', 'caption': 'Photos', 'msg':"Thank you for email!", 'msg2':" An email confirmation is on its way. I will get back you soon!"  })) 
 

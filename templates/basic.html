@@ -5,29 +5,30 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Jasmit Kaur - {{title}}</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script>
-$(function(){
-  $('a').each(function() {
-    if ($(this).prop('href') == window.location.href) {
-      $(this).addClass('current');
-    }
-  });
-});
-</script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script>
+	$(function(){
+	  $('a').each(function() {
+	    if ($(this).prop('href') == window.location.href) {
+	      $(this).addClass('current');
+	    }
+	  });
+	});
+	</script>
 
-<link rel="stylesheet" type="text/css" href="static/cssstylesheet.css"/>
-
+	<link rel="stylesheet" type="text/css" href="static/cssstylesheet.css"/>
 </head>
+
 <body>
 <div class = "page-wrap">
+<!-- Criteria comment - Header is present. There is a class named "heading". -->
 	<header>
 		{% block nameheader %}
 		<div class="heading" >
+		<img src="static/jkinit.jpg" alt="JKInitials" width="50" height="100">
 		<h1> {{header}}</h1>
 		</div>
 		{% endblock %}
@@ -65,6 +66,8 @@ $(function(){
 		<a href = "https://jasmitk.wordpress.com">Website</a>
 		</p>
 	</footer>
+
+	
 	
 </body>
 </html>
